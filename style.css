@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-text{
+    background: white;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+.input-text input{
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+.btn{
+    padding: 8px 32px;
+    border: 0;
+    outline: 0;
+    border-radius: 15px;
+}
+form{
+    padding: 30px 40px;
+    box-shadow: 0 0 12px 2px black;
+}
+form h1{
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgba(8, 8, 205, 0.533);
+    font-style: italic;
+    font-weight: bold;
+}
+.email{
+    margin-bottom: -4px;
+}

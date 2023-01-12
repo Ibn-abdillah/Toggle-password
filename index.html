@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show and hide password</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+
+    <form action="">
+      <h1>Sign Up</h1>
+      <label for="">Username</label>
+      <div style="margin-bottom: 10px;" class="input-text">
+       <input type="text" required placeholder="username">
+       <img src="images/user.png" width="12px">
+     </div>
+ 
+     <div class="input-div">
+       <label for="">Email</label>
+       <div class="input-text">
+         <input type="email" required placeholder="Email">
+         <img src="images/email.png" width="20px" class="email">
+       </div>
+
+     <div class="input-div">
+       <label for="">Password</label>
+       <div class="input-text">
+         <input type="password" required placeholder="password" class="pass">
+         <img src="images/eye-open.png" width="15px" class="eye">
+       </div>
+     </div>
+
+     <div class="input-div">
+       <label for="">Confirm Password</label>
+       <div class="input-text">
+         <input type="password" required placeholder="password" class="pass">
+         <img src="images/eye-open.png" width="15px" class="eye">
+       </div>
+     </div>
+     <button type="submit" class="btn">submit</button>
+    </form>
+   </div>
+
+   <script>
+    var eye = document.getElementsByClassName("eye")
+    var pass = document.getElementsByClassName("pass")
+
+    eye[0].onclick = function (){
+      if (pass[0].type == "password"){
+        pass[0].type = "text"
+        eye[0].src = "images/eye-close.png"
+      }else{
+        pass[0].type = "password"
+        eye[0].src = "images/eye-open.png"
+      }
+    }
+    eye[1].onclick = function (){
+      if (pass[1].type == "password"){
+        pass[1].type = "text"
+        eye[1].src = "images/eye-close.png"
+      }else{
+        pass[1].type = "password"
+        eye[1].src = "images/eye-open.png"
+      }
+    }
+   </script>
+</body>
+</html>
